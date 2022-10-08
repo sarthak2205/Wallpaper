@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 
 const navigations = [
   { name: "Home", path: "/" },
-  { name: "Careers", path: "/" },
-  { name: "Get Early Access", path: "/" },
-  { name: "About Us", path: "/" },
+  { name: "PC Wallpapers", path: "/" },
+  { name: "Phone Wallpapers", path: "/" },
+  { name: "4k Wallpapers", path: "/" },
 ];
 
 export default function Example() {
@@ -18,11 +18,10 @@ export default function Example() {
   return (
     <>
       {console.log(mobileMenuOpen)}
-      <div className="w-full px-5 py-3.5 flex items-center justify-between md:hidden">
+      <div className="w-full px-5 py-3.5 flex items-center justify-end md:hidden">
         {/* Mobile menu button */}
-
         <div onClick={() => setMobileMenuOpen(true)} className="text-white">
-          <HiOutlineMenuAlt3 className="block h-6 w-6" aria-hidden="true" />
+          <HiOutlineMenuAlt3 className="block h-6 w-6 text-white-100" aria-hidden="true" />
         </div>
       </div>
 
@@ -55,12 +54,12 @@ export default function Example() {
             leaveTo="transform opacity-0 scale-110  sm:translate-x-full sm:scale-100 sm:opacity-100"
           >
             <nav
-              className="fixed z-40  bg-[#4896EF] inset-0 h-full w-full bg-rl-dark-grey sm:inset-y-0 sm:left-auto sm:right-0 sm:max-w-sm sm:w-full sm:shadow-lg"
+              className="fixed z-40  bg-[#173640] inset-0 h-full w-full bg-rl-dark-grey sm:inset-y-0 sm:left-auto sm:right-0 sm:max-w-sm sm:w-full sm:shadow-lg"
               aria-label="Global"
             >
               <div className="py-5 flex items-center justify-between px-7">
                 <div className="w-3/4">
-                  <Link href="/">
+                  <Link href="">
                     <div
                       onClick={() => setMobileMenuOpen(false)}
                       className="flex flex-shrink-0 items-center "
@@ -81,17 +80,17 @@ export default function Example() {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <span className="sr-only">Close main menu</span>
-                  <HiX className="block h-6 w-6" aria-hidden="true" />
+                  <HiX className="block h-6 w-6 text-white-100" aria-hidden="true" />
                 </button>
               </div>
-              <div className="max-w-8xl mx-auto min-h-screen mt-12 py-3 px-2 sm:px-4 space-y-8">
+              <div className="max-w-8xl mx-auto min-h-screen mt-12 py-3 px-2 sm:px-4 space-y-8 text-white">
                 {navigations.map((item) => (
                   <Fragment key={item?.name}>
                     <Link href={`${item?.path}`}>
                       <a
                         target={item.newTab ? "_blank" : ""}
                         onClick={() => setMobileMenuOpen(false)}
-                        className="block rounded-md py-2 px-3 font-bold text-white text-4xl"
+                        className="block rounded-md py-5 px-3 text-white-100 font-bold text-4xl"
                       >
                         {item?.name}
                       </a>
