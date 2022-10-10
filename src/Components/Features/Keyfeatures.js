@@ -17,16 +17,14 @@ export default function Keyfeatures() {
     <div className='grid md:grid-cols-3 place-items-center md:place-items-start gap-y-20 gap-x-10 md:ml-20'>
         {features.map((item, index) => {
             return (
-                <div key={item?.title} className='text-white-100 w-3/4 relative'>
-                    <div className='h-10 w-10 rounded-full bg-white-100 flex justify-center items-center'>
-                        <div className='text-black '>
-                            {item?.icon}
-                        </div>
+                <div key={item?.title} className='text-white-100 w-3/4 md:relative flex flex-col items-center md:items-start'>
+                    <div className='h-10 w-10 rounded-full bg-white-100 flex justify-center items-center text-black'>
+                        {item?.icon}
                     </div>
                     <h1 className='text-bold py-5'>
                         {item?.title}
                     </h1>
-                    <span className='text-[#999999]'>
+                    <span className='text-[#999999] text-center md:text-left'>
                         {item?.details}
                     </span>
                 </div>

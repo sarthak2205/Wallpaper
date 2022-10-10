@@ -15,7 +15,7 @@ export default function PricingPlans() {
     <div className=' grid grid-cols-1 md:grid-cols-3 space-y-8 md:space-y-0 md:space-x-8'>
         {plans.map((item, index) => {
            return ( 
-            <div key={index} className="p-10 bg-[#a9a9a9] text-white-100 flex flex-col justify-start rounded-xl text-left"> 
+            <div key={index} className="p-10 bg-[#a9a9a9] text-white-100 flex flex-col md:justify-start rounded-xl text-center md:text-left"> 
                     <div className='pb-3 text-base'>
                         {item.title}
                     </div>
@@ -23,7 +23,7 @@ export default function PricingPlans() {
                         <div className='text-extrabold text-6xl'>
                             {item.price}
                         </div>
-                        <div className='text-black text-xl ml-1 mt-3'>{item?.duration}</div>
+                        <div className='text-black md:text-xl ml-1 mt-3'>{item?.duration}</div>
                     </div>
                     <div>
                         {points.map((point) =>{
@@ -37,8 +37,8 @@ export default function PricingPlans() {
                             )
                         })}
                     </div>
-                    <div className='flex justify-center bg-yellow-400 rounded-xl py-2 w-1/2 mt-5 '>
-                        <button>{item?.button}</button>
+                    <div className=' mt-5 '>
+                        <button className='bg-yellow-400 rounded-xl py-2 w-2/3 md:w-1/2'>{item?.button}</button>
                     </div>
             </div>
             )
