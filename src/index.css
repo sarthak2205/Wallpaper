@@ -8,13 +8,19 @@ body {
 
 code {
   font-family: 'Poppins', sans-serif;
-
 }
 
 @layer utilities{
   .text-gradient{
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .outlining{
+    text-shadow:
+    -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff
   }
 }
 

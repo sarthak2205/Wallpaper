@@ -5,7 +5,7 @@ import { AiOutlineCloudUpload } from 'react-icons/ai'
 export default function Navbar() {
   return (
     <div>
-        <nav className="flex items-center justify-around flex-wrap bg-teal-500 p-2">
+        <nav className="flex items-center justify-around flex-wrap bg-none p-2">
             <div className='text-2xl'>
                 <h1 className='text-white-100 font-extrabold'>Wallpaper<span className='font-light'>Mania</span></h1>
             </div>
@@ -15,13 +15,16 @@ export default function Navbar() {
                         <a className="text-[#05F591] hover:text-blue-800" href="/"><span>Home</span></a>
                     </li>
                     <li className="mr-6">
-                        <a className="text-white-200 hover:text-blue-800" href="/wallpapers">PC Wallpapers</a>
+                        <a className="text-white-200 hover:text-blue-800" href="/features">Features</a>
                     </li>
                     <li className="mr-6">
                         <a className="text-white-200 hover:text-blue-800" href="/phonewallpapers">Phone Wallpapers</a>
                     </li>
                     <li className="mr-6">
                         <a className="text-white-200 hover:text-blue-800" href="/4kwallpapers">4k Wallpapers</a>
+                    </li>
+                    <li className="mr-6">
+                        <a className="text-white-200 hover:text-blue-800" href="/contactus">Contact Us</a>
                     </li>
                 </ul>
             </div>

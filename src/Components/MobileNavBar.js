@@ -8,9 +8,10 @@ import { Link } from "react-router-dom";
 
 const navigations = [
   { name: "Home", path: "/" },
-  { name: "PC Wallpapers", path: "/" },
+  { name: "Features", path: "/" },
   { name: "Phone Wallpapers", path: "/" },
   { name: "4k Wallpapers", path: "/" },
+  { name: "Contact Us", path: "/" },
 ];
 
 export default function Example() {
